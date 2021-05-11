@@ -13,7 +13,7 @@ cuda10.2
 
 ## how to run
 1. https://github.com/wuzuowuyou/CRNN_Chinese_Characters_res18_senet/blob/master/demo_libtorch.py
-运行demo_libtorch.py脚本得到ptwenjian
+运行demo_libtorch.py脚本得到pt文件
 2. crnn.cpp里面main函数处修改相应路径运行
 
 
