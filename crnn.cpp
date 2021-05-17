@@ -246,6 +246,7 @@ int main()
 
     int cnt_all = 0;
     int cnt_right = 0;
+    double start = getTickCount();
     for(int i=0;i<v_path.size();i++)
     {
         cnt_all += 1;
@@ -277,6 +278,8 @@ int main()
         std::cout<<"ratio="<<cnt_right * 1.0 / cnt_all<<std::endl;
 #endif
     }
+    double time_cunsume = ((double)getTickCount() - start) / getTickFrequency();
+    std::cout<<"ave time="<< time_cunsume * 1.0 / cnt_all * 1000 <<"ms"<<std::endl;
 
     return 0;
 }
