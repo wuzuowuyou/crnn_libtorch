@@ -108,7 +108,8 @@ bool LstmImgStandardization(const cv::Mat &src, const float &ratio, int standard
         dst=mask.clone();
     }
 
-    cv::resize(dst, dst, cv::Size(standard_w,standard_h));
+    //cv::resize(dst, dst, cv::Size(standard_w,standard_h));
+    cv::resize(dst, dst, cv::Size(standard_w,standard_h),0,0,cv::INTER_AREA);
     return true;
 }
 
